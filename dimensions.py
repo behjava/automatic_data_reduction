@@ -1,6 +1,5 @@
 ################ First reading a sample fits file to obtain the dimensions of the images NAXIS2,NAXIS1 #########
 from astropy.io import fits
-
 def read(path,files):
 	dummy=0
 	while dummy < 1:
