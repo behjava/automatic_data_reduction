@@ -1,5 +1,5 @@
 # Automatic Data Reduction Pipeline
-Fast and automatic data reduction pipeline for small optical telescopes.
+Fast and automatic data reduction pipeline for small optical telescopes data.
 
 <p align="center">
 <img src="data_reduction_pipeline.jpeg" width="600" />
