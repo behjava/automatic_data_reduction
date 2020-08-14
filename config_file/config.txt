@@ -1,5 +1,5 @@
-mean	# The method for producing master images. Can be 'sum', 'mean', or 'median'
-max	# The method for normalizing flat frames. Can be 'max', 'mean', or 'exptime'
+mean	# the method for producing master images. Can be 'sum', 'mean', or 'median'
+max	# the method for normalizing flat frames. Can be 'max', 'mean', or 'exptime'
 10000	# flat_min_count
 50000	# flat_max_count
 900	# min_bias_limit, recommended value: bias_mean - 5*stdv
