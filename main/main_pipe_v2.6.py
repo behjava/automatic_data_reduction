@@ -7,6 +7,7 @@ import errno
 import glob
 import os
 from astropy.io import fits
+
 #my modules:
 import master_maker as master
 import normalizer as norm
@@ -231,17 +232,6 @@ for pyc_name in pyc_files:
 
 elapsed_time = time.time() - start_time
 print "Elapsed Time= ", elapsed_time, "sec"
-
-
-
-
-
-
-
-
-
-
-
 
 
 
