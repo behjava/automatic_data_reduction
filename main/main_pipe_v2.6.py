@@ -27,7 +27,7 @@ min_bias_limit=np.float(lines[4])
 max_bias_limit=np.float(lines[5])
 
 
-####### Reading all the fits files in the folder ###################
+####### Reading all the fits files in the folder ##################
 
 path = lines[6]
 raw_path=path+'/*.fits'
@@ -45,10 +45,10 @@ bias_cube=np.empty([NAXIS2,NAXIS1,1])
 dark_cube=np.empty([NAXIS2,NAXIS1,1])
 
 
-####### Making data cubes using flat, bias, and dark frames. The Light frames are only renamed for later use. ################
+####### Making data cubes using flat, bias, and dark frames. The Light frames are only renamed for later use. ###############
 
 
-################# opening log files ##############################
+################# opening log files #############################
 def assure_path_exists(raw_path):
         dir = os.path.dirname(raw_path)
         if not os.path.exists(dir):
@@ -122,7 +122,7 @@ light_log.close()
 
 
 
-##### Getting rid of the first slice of each cube which is empty ################################
+##### Getting rid of the first slice of each cube which is empty ###############################
 
 flat_exptime=np.delete(flat_exptime, 0)
 flat_cube=np.delete(flat_cube, (0), axis=2)
@@ -160,7 +160,7 @@ if np.shape(bias_cube)[2] ==1:
 
 
 
-######################### Making masters ##########################################################
+######################### Making masters ########################################################
 product_path=path+'/products/'
 assure_path_exists(product_path)  #the directory for the products
 
@@ -202,7 +202,7 @@ hdu=fits.PrimaryHDU(data=test_flat_division)#, header=header)
 test_flat_division_path=product_path+'/test_flat_division.fits'
 hdu.writeto(test_flat_division_path, overwrite=True)
 
-####################### Applying the reductions to the Light frames and saving new fits files with the same header and a comment line #########
+###################### Applying the reductions to the Light frames and saving new fits files with the same header and a comment line #########
 
 
 light_path = path+'/*_Light.fits'
