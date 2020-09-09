@@ -1,6 +1,6 @@
 import numpy as np
 
-####### Flat normalizing function #########################
+####### Flat normalizing function ##################
 def FLAT_Normalizing(image, method):
 	if method=='max':
 		out=image/np.max(image)
@@ -9,4 +9,3 @@ def FLAT_Normalizing(image, method):
 	if method=='exptime':
 		out=image/exptime
 	return out
-###########################################################
