@@ -1,3 +1,4 @@
+## log writer
 import numpy as np
 
 def log(filename, number, header,scidata,name,flag):
